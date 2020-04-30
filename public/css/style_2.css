@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+/* #00FF66 */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto Serif', serif;
+  color: #2F2E41;
+  scroll-behavior: smooth;
+}
+
+#reply_message {
+  display: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #77C117;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* scrollbar */
+.p_xy_30 {
+  padding: 30px 0;
+}
+
+.text_align_center {
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.mb_45 {
+  margin-bottom: 45px;
+}
+
+.mt_45 {
+  margin-top: 45px;
+}
+
+.p_tb_70 {
+  padding: 70px 0;
+}
+
+/* intro section */
+.intro {
+  background-color: #E5E5E5;
+  padding: 80px 0;
+}
+
+.intro_left {
+  padding: 25px 15px;
+  background-color: #C4C4C4;
+}
+
+.intro_top_text {
+  color: #5b5b5b;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 16px;
+  letter-spacing: 0.2px;
+  display: block;
+}
+
+.intro_main_text {
+  margin-bottom: 8px;
+}
+
+.intro_main_text h2 span {
+  color: #77C117;
+}
+
+.intro_desc_text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #5b5b5b;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 600px) {
+  body {
+    color: red;
+  }
+
+  div.intro_right_image {
+    margin-top: 130px;
+  }
+}
+
+@media (max-width:990px) {
+  div.description_parent {
+    margin-top: 120px;
+  }
+
+  div.intro_right_image {
+    margin-top: 120px;
+  }
+
+  div.skill_2 {
+    margin-top: 40px;
+  }
+}
+
+a {
+  background: #eee;
+  color: #5b5b5b;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 10px 45px;
+  font-size: 14px;
+  line-height: normal;
+  overflow: hidden;
+  margin-right: 25px;
+  transition: all 0.4s ease;
+  /* todo width */
+}
+
+/* check a:hover */
+a:hover {
+  text-decoration: none;
+  color: #77C117;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:nth-child(1) {
+  background: #eee;
+  color: #77C117;
+}
+
+a:nth-child(1):hover {
+  color: #eee;
+  background-color: #77C117;
+}
+
+a:nth-child(2) {
+  color: #eee;
+  background: #77C117;
+}
+
+a:nth-child(2):hover {
+  background: #eee;
+  color: #77C117;
+}
+
+/* description section */
+.intro2 {
+  background-color: #C4C4C4;
+  padding: 35px 0px;
+}
+
+.description_parent {}
+
+.description_child {
+  background-color: #E5E5E5;
+  padding: 20px 20px 20px;
+}
+
+.description_child h1 {
+  margin-bottom: 1rem;
+}
+
+.span_text {
+  color: #77C117;
+}
+
+/* project section */
+.project_section {
+  text-align: center;
+  background-color: #E5E5E5;
+}
+
+.project_section h2 {
+  color: #77C117;
+  font-size: 2.4em;
+  font-weight: bold;
+}
+
+.header_text {
+  margin-bottom: 45px;
+}
+
+.carousel-item {
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.carousel-item img {}
+
+.caption_class {
+  background: rgba(0, 0, 0, 0.72);
+  padding: 14px 20px 25px;
+  border-radius: 20px;
+}
+
+.caption_class h5 {
+  color: #77C117;
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.caption_class p {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.caption_class .links {
+  /* display: flex; */
+}
+
+.caption_class a {
+  padding: 11px 25px;
+  font-size: 14px;
+  border-radius: 0px;
+  margin-right: 0px;
+}
+
+.caption_class a i {
+  vertical-align: sub;
+}
+
+.caption_class a:hover {
+  color: #eee;
+  background-color: #77C117;
+}
+
+/* skill section */
+.skill {
+  background-color: #C4C4C4;
+}
+
+.skill h3, p {
+  display: block;
+}
+
+.skill h2 {
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.timeline-wrapper {
+  position: relative;
+  padding: 22px 0;
+}
+
+.timeline-wrapper:before {
+  content: "";
+  background: #474559;
+  width: 0.27rem;
+  height: 100%;
+  position: absolute;
+  left: 38px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.timeline-wrapper:last-child:before {
+  height: 0;
+}
+
+.timeline-logo {
+  background: #474559;
+  border-radius: 100%;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.timeline-logo span {
+  color: aliceblue;
+}
+
+.timeline_info {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 432px;
+  margin-left: 6em;
+}
+
+.timeline_info h3 {
+  font-weight: bolder
+}
+
+.progress-bar {
+  height: 0.27rem;
+  background-color: #2F2E41;
+}
+
+/* contact */
+.contact_section {
+  background-color: #E5E5E5;
+  padding: 35px 0;
+}
+
+.contact_section h2 {
+  color: #77C117;
+  margin-bottom: 30px;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+.contact-form .submit-btn {
+  background: #77C117;
+  border-radius: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  border: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
