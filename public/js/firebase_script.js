@@ -21,15 +21,15 @@ function sendData(name, email, message) {
       email: email,
       message: message
     })
-    .then(function(docRef) {
+    .then(function (docRef) {
       console.log("Document written with ID: ", docRef.id);
     })
-    .catch(function(error) {
+    .catch(function (error) {
       console.error("Error adding document: ", error);
     });
   document.getElementById("visitor").reset();
   //sent a message back
   message = document.getElementById("reply_message")
-  message.style.display = 'block';
+  message.classList.remove('d-none')
 
 }

@@ -9,10 +9,6 @@ body {
   scroll-behavior: smooth;
 }
 
-#reply_message {
-  display: none;
-}
-
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
@@ -38,6 +34,10 @@ body {
 h1, h2, h3, h4, h5 {
   margin-top: 10px;
   font-weight: bold;
+}
+
+h6 {
+  font-weight: bolder;
 }
 
 .mb_45 {
@@ -89,10 +89,6 @@ h1, h2, h3, h4, h5 {
 }
 
 @media (max-width: 600px) {
-  body {
-    color: red;
-  }
-
   div.intro_right_image {
     margin-top: 130px;
   }
@@ -112,9 +108,7 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-a {
-  background: #eee;
-  color: #5b5b5b;
+#intro a {
   font-weight: bold;
   border-radius: 50px;
   padding: 10px 45px;
@@ -126,32 +120,26 @@ a {
   /* todo width */
 }
 
-/* check a:hover */
-a:hover {
-  text-decoration: none;
-  color: #77C117;
-}
-
-a:hover {
+.links a:hover {
   text-decoration: none;
 }
 
-a:nth-child(1) {
+.links a:nth-child(1) {
   background: #eee;
   color: #77C117;
 }
 
-a:nth-child(1):hover {
+.links a:nth-child(1):hover {
   color: #eee;
   background-color: #77C117;
 }
 
-a:nth-child(2) {
+.links a:nth-child(2) {
   color: #eee;
   background: #77C117;
 }
 
-a:nth-child(2):hover {
+.links a:nth-child(2):hover {
   background: #eee;
   color: #77C117;
 }
@@ -265,6 +253,10 @@ a:nth-child(2):hover {
   left: 38px;
 }
 
+.timeline-logo img {
+  height: 42px;
+}
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -327,4 +319,54 @@ input {
   margin-top: 10px;
   cursor: pointer;
   transition: all 0.4s ease;
+}
+
+/* social icons */
+#socialIcons {
+  background: #353b48;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-buttons a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 25px;
+  width: 70px;
+  height: 60px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+}
+
+.social-buttons a::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 60px;
+  /* background: linear-gradient(45deg, #22a6b3, #30336b); */
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+  transform: scale(0);
+}
+
+.social-buttons a i {
+  transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+  /* background: linear-gradient(45deg, #22a6b3, #30336b); */
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(2.2);
 }
