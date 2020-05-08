@@ -14,22 +14,33 @@ firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 database = firebase.firestore();
 
+// smooth scroll
+smoothie();
+
 function sendData(name, email, message) {
-  console.log(name);
+  // console.log(name);
   database.collection("information").add({
       name: name,
       email: email,
       message: message
     })
     .then(function (docRef) {
-      console.log("Document written with ID: ", docRef.id);
+      // console.log("Document written with ID: ", docRef.id);
     })
     .catch(function (error) {
       console.error("Error adding document: ", error);
     });
   document.getElementById("visitor").reset();
   //sent a message back
-  message = document.getElementById("reply_message")
+  var message = document.getElementById("reply_message")
   message.classList.remove('d-none')
+
+}
+
+
+const changeToOrange = () => {
+  // #ffa502
+  textRotateEl = document.getElementsByClassName("txt-rotate")
+
 
 }

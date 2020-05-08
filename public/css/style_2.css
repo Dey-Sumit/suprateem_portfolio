@@ -52,6 +52,13 @@ h6 {
   padding: 70px 0;
 }
 
+.alert {
+  background-color: #fff;
+  color: #2f2e41;
+  /* border-bottom: 1px solid; */
+  box-shadow: -9px 5px 8px -5px rgba(0, 0, 0, 0.63);
+}
+
 /* intro section */
 .intro {
   background-color: #E5E5E5;
@@ -109,6 +116,7 @@ h6 {
 
   div.description_child {
     margin-top: 0px;
+    width: 80%;
   }
 }
 
