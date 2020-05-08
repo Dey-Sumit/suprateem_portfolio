@@ -14,8 +14,7 @@ firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 database = firebase.firestore();
 
-// smooth scroll
-smoothie();
+
 
 function sendData(name, email, message) {
   // console.log(name);
